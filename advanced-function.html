@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Functions</title>
+</head>
+
+<body>
+  <button onclick="" class="js-button">Click</button>
+  <script>
+    /*
+    const buttonElement = document.querySelector(".js-button");
+
+    const eventListener = () => {
+      console.log("click");
+    };
+    buttonElement.addEventListener('click', eventListener);
+
+    buttonElement.removeEventListener("click", eventListener);
+
+
+    buttonElement.addEventListener('click', () => {
+      console.log("Click2")
+    })
+    /*
+    const function1 = function () {
+      console.log("Welcome to School");
+    }
+    console.log(function1);
+
+    const objecct1 = {
+      num: 2,
+      fun: function () {
+        console.log("welcome");
+      }
+    };
+    objecct1.fun();
+
+    function display(parameter) {
+      console.log(parameter);
+    }
+    display(2);
+
+    function run(parameter) {
+      parameter();
+    }
+    run(function () {
+      console.log("Hello");
+    });
+
+    setTimeout(function () {
+      console.log("Welcome");
+    }, 8000);
+
+    setInterval(function () {
+      console.log("Welcome to uenr");
+    }, 3000);
+
+    console.log("Next line");
+    */
+
+    /*
+    [
+      "make dinner",
+      "wash dishes",
+      'watch youtube',
+    ].forEach((value, index) => {
+      if (value === "wash dishes") {
+        return;
+      }
+
+      console.log(index);
+      console.log(value);
+    });
+
+    const regularFunction = function (parameter) {
+      console.log("Hello");
+      return 5;
+    }
+
+    const arrowFunction = (parameter) => {
+      console.log("Welcome");
+      return 5;
+    }
+    arrowFunction();
+
+    const oneParam1 = parameter => {
+      console.log(parameter + 1);
+    }
+    oneParam1(2);
+
+    const oneParam = () => 2 + 2;
+    console.log(oneParam());
+
+    const object2 = {
+    method: () =>{
+
+    },
+    method(){
+
+    }
+  };
+  */
+    /*
+       console.log([1,-3,5].filter((value,index) =>{
+      if(value >=0){
+        return true;
+      }
+      else{
+        return false;
+      }
+      return value >=0;
+       }));
+       */
+
+    const num = [1, 1, 3].map((value, index) => {
+      return value * 2;
+    });
+    console.log(num);
+  </script>
+</body>
+
+</html>
