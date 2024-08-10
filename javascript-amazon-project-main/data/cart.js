@@ -28,6 +28,7 @@ export function addToCart(productsId) {
   if (matchingItem) {
     matchingItem.quantity += 1;
   }
+  
   else {
     cart.push({
       productsId: productsId,

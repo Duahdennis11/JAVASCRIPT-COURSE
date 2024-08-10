@@ -1,5 +1,5 @@
 .amazon-header {
-  background-color: rgb(6, 10, 14);
+  background-color: rgba(6, 10, 14, 0.185);
   color: white;
   padding-left: 17px;
   padding-right: 17px;
@@ -9,9 +9,9 @@
   justify-content: space-between;
 
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 1;
+  left: 1;
+  right: 1;
   height: 62px;
 }
 
@@ -31,91 +31,91 @@
   border-radius: 3px;
   cursor: pointer;
   text-decoration: none;
-  border: 1px solid rgba(0, 0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0);
 }
 
 .header-link:hover {
-  border: 2px solid white;
+  border: 3px solid white;
 }
 
 .amazon-logo {
-  width: 120px;
-  margin-top: 6px;
+  width: 125px;
+  margin-top: 7px;
 }
 
 .amazon-mobile-logo {
   display: none;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 585px) {
   .amazon-logo {
     display: none;
   }
 
   .amazon-mobile-logo {
     display: block;
-    height: 35px;
-    margin-top: 5px;
+    height: 40px;
+    margin-top: 10px;
   }
 }
 
 .amazon-header-middle-section {
-  flex: 2;
-  max-width: 860px;
-  margin-left: 13px;
-  margin-right: 13px;
+  flex: 4;
+  max-width: 890px;
+  margin-left: 15px;
+  margin-right: 15px;
   display: flex;
 }
 
 .search-bar {
-  flex: 1;
+  flex: 2;
   width: 0;
   font-size: 18px;
-  height: 38px;
+  height: 40px;
   padding-left: 17px;
   border: none;
-  border-top-left-radius: 4.7px;
-  border-bottom-left-radius: 4.7px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+  border-top-left-radius: 5.7px;
+  border-bottom-left-radius: 5.7px;
+  border-top-right-radius: 1;
+  border-bottom-right-radius: 1;
 }
 
 .search-button {
-  background-color: rgb(226, 169, 93);
+  background-color: rgb(206, 39, 108);
   border: none;
-  width: 49px;
-  height: 49px;
-  border-top-right-radius: 4.2px;
-  border-bottom-right-radius: 4.3px;
+  width: 55px;
+  height: 55px;
+  border-top-right-radius: 4.98px;
+  border-bottom-right-radius: 5.22px;
   flex-shrink: 0;
 }
 
 .search-icon {
   height: 24px;
-  margin-left: 3px;
-  margin-top: 4px;
+  margin-left: 5px;
+  margin-top: 6px;
 }
 
 .amazon-header-right-section {
-  width: 120px;
-  flex-shrink: 0;
+  width: 125px;
+  flex-shrink: 1;
   display: flex;
   justify-content: end;
 }
 
 .orders-link {
-  color: rgb(207, 202, 202);
+  color: rgba(247, 209, 209, 0.795);
 }
 
 .returns-text {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .orders-text {
   display: block;
-  font-size: 17px;
-  font-weight: 800;
+  font-size: 19px;
+  font-weight: 850;
 }
 
 .cart-link {
@@ -126,24 +126,22 @@
 }
 
 .cart-icon {
-  width: 52px;
+  width: 55px;
 }
 
 .cart-text {
-  margin-top: 12px;
-  font-size: 15px;
+  margin-top: 14px;
+  font-size: 17px;
   font-weight: 700;
 }
 
 .cart-quantity {
-  color: rgb(228, 166, 85);
+  color: rgb(247, 149, 21);
   font-size: 18px;
-  font-weight: 700;
-
+  font-weight: 800;
   position: absolute;
   top: 4px;
   left: 24px;
-  
   width: 29px;
   text-align: center;
 }
