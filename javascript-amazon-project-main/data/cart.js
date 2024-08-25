@@ -51,7 +51,20 @@ export function removeFromCart(productId) {
     }
   });
 
+  cart = newCart;
 
   saveToStorage();
-  cart = newCart;
+}
+
+function updateDeliveryOption(productId, deliveryOptionId) {
+  let matchingItem;
+
+  cart.forEach((cartItem) => {
+    if (productsId === cartItem.productsId) {
+      matchingItem = cartItem;
+    }
+  });
+
+  matchingItem.deliveryOptionId = deliveryOptionId;
+  saveToStorage();
 }
