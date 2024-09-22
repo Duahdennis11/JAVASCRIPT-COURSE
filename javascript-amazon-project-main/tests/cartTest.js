@@ -1,3 +1,3 @@
 import { addToCart } from "../data/cart.js";
 
-describe('')
+describe('test suite: addToCart')
