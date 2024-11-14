@@ -98,9 +98,16 @@ export function loadProductsFetch() {
         }
         return new Product(productDetails);
       });
+
+      console.log("load Products");
+    })
+    .catch((error) => {
+      console.log("unexpected message. Please try again later");
     });
+
   return promise;
 }
+
 /*
 loadProductsFetch().then(() => {
   console.log("Next Step");
@@ -121,6 +128,10 @@ export function loadProducts(fun) {
     console.log("Load Products");
 
     fun();
+  });
+
+  xhr.addEventListener("error", (error) => {
+    console.log("unexpected message. Please try again later");
   });
 
   xhr.open("GET", "https://supersimplebackend.dev/products");
@@ -378,6 +389,7 @@ export const products = [
     keywords: ["shoes", "flats", "womens", "footwear"],
   },
   {
+
     id: "8b5a2ee1-6055-422a-a666-b34ba28b76d4",
     image: "images/products/men-golf-polo-t-shirt-blue.jpg",
     name: "Men's Regular-Fit Quick-Dry Golf Polo Shirt",
